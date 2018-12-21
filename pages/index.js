@@ -25,7 +25,7 @@ class Index extends React.Component {
   };
 
   componentDidMount() {
-    // Router.push("/login/standard");
+    Router.push("/landing");
   }
 
   render() {
