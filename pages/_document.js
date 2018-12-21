@@ -29,9 +29,9 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="/static/logo-only.png" />
         </Head>
-        <body>
+        <body style={{overflowY: 'hidden'}}>
           <Main />
           <NextScript />
         </body>

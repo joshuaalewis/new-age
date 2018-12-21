@@ -13,9 +13,18 @@ export const styles = theme => ({
         display: 'flex',
         width: '100%',
     },
+    titleWrapper: {
+        width: '100%',
+        textAlign: 'center'
+    },
     title: {
-        fontWeight: 300, 
-        marginLeft: 30,
+        fontWeight: 400, 
+        color: 'white',
+        paddingLeft: 15,
+        paddingRight: 15,
+        // marginLeft: 30,
+        textAlign: 'center',
+        display: 'inline',
         [theme.breakpoints.down('sm')]: {
             fontSize: 18,
             textAlign: 'center',
@@ -23,8 +32,14 @@ export const styles = theme => ({
             marginLeft: 20,
         }
     },
+    leftButton: {
+        marginLeft: '10%',
+    },
+    rightButton: {
+        marginRight: '10%',
+    },
     appBar: {
-        background: `linear-gradient(to bottom right, ${theme.palette.primary[600]}, ${theme.palette.primary[400]})`,
+        background: `linear-gradient(to bottom right, ${theme.palette.primary[400]}, ${theme.palette.primary[200]})`,
         zIndex: 2200,
     },
     menuButton: {
@@ -84,7 +99,8 @@ export const styles = theme => ({
         marginRight: 0,
     },
     childContainer: {
-        height: 'calc(100% - 90px)',
-        margin: '0'
+        height: 'calc(100vh - 80px)',
+        margin: '0',
+        overflowY: 'auto',
     }
 });

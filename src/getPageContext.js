@@ -2,34 +2,32 @@
 
 import { SheetsRegistry } from 'jss';
 import { createMuiTheme, createGenerateClassName } from '@material-ui/core/styles';
-import blueGrey from '@material-ui/core/colors/blueGrey';
-import red from '@material-ui/core/colors/red';
-import lightBlue from '@material-ui/core/colors/lightBlue';
+import { lightBlue, lightGreen, red, blueGrey, green, teal, cyan, lime } from '@material-ui/core/colors';
 
 // A theme with custom primary and secondary color.
 // It's optional.
-const medTraitBlue = {
-  50: '#D0E5F2', // font and borders for dark
-  100: '#A2CBE6',
-  200: '#73B1D9', 
-  300: '#5CA4D3', // offset colors
-  400: '#2E8AC7',
-  500: '#0071BB', // buttons and accents
-  600: '#005D9A',
-  700: '#004877', 
-  800: '#003E66', // emphasis
-  900: '#002A44',
-  A100: '#179fce',
-  A200: '#2f7292',
-  A400: '#2f5978',
-  A700: '#2e475e',
-  contrastDefaultColor: 'light',
-};
+// const medTraitBlue = {
+//   50: '#D0E5F2', // font and borders for dark
+//   100: '#A2CBE6',
+//   200: '#73B1D9', 
+//   300: '#5CA4D3', // offset colors
+//   400: '#2E8AC7',
+//   500: '#0071BB', // buttons and accents
+//   600: '#005D9A',
+//   700: '#004877', 
+//   800: '#003E66', // emphasis
+//   900: '#002A44',
+//   A100: '#179fce',
+//   A200: '#2f7292',
+//   A400: '#2f5978',
+//   A700: '#2e475e',
+//   contrastDefaultColor: 'light',
+// };
 
 const theme = createMuiTheme({
   palette: {
-    primary: medTraitBlue,
-    secondary: lightBlue,
+    primary: teal,
+    secondary: cyan,
     error: red,
   },
 });

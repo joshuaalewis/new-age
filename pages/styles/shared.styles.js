@@ -5,8 +5,11 @@ export const styles = theme => ({
         height: '100%',
         backgroundColor: '#f3f3f3',
     },
-    subheaderSection: {
-
+    card: {
+        margin: 10,
+    },
+    media: {
+        height: 300,
     },
     subheader: {
         borderRadius: 30,
