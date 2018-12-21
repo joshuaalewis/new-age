@@ -1,0 +1,36 @@
+{
+  "name": "nextjs",
+  "version": "3.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.18.0",
+    "body-parser": "~1.0.1",
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "~4.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "jss": "latest",
+    "lodash": "^4.17.11",
+    "mdi-material-ui": "^5.5.0",
+    "next": "latest",
+    "path": "^0.12.7",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-jss": "latest",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "next | node --inspect server/index.js",
+    "build": "next build",
+    "start": "NODE_ENV=production next start | node server/index.js"
+  }
+}

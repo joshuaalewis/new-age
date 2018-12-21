@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  frontend:
+    container_name: medtrait-client
+    build:
+      context: .
+    volumes:
+      - '.:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - 3030:3030
+    command: npm run dev
