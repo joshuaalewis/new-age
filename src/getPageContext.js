@@ -6,28 +6,28 @@ import { lightBlue, lightGreen, red, blueGrey, green, teal, cyan, lime } from '@
 
 // A theme with custom primary and secondary color.
 // It's optional.
-// const medTraitBlue = {
-//   50: '#D0E5F2', // font and borders for dark
-//   100: '#A2CBE6',
-//   200: '#73B1D9', 
-//   300: '#5CA4D3', // offset colors
-//   400: '#2E8AC7',
-//   500: '#0071BB', // buttons and accents
-//   600: '#005D9A',
-//   700: '#004877', 
-//   800: '#003E66', // emphasis
-//   900: '#002A44',
-//   A100: '#179fce',
-//   A200: '#2f7292',
-//   A400: '#2f5978',
-//   A700: '#2e475e',
-//   contrastDefaultColor: 'light',
-// };
+const customBlue = {
+  50: '#B5CBD7', // font and borders for dark
+  100: '#97B6C8',
+  200: '#89ACC0', 
+  300: '#7AA1B8', // offset colors
+  400: '#6B97B0',
+  500: '#5D8DA9', // buttons and accents
+  600: '#55819A',
+  700: '#4D748B', 
+  800: '#44677B', // emphasize
+  900: '#3C5A6C',
+  A100: '#179fce',
+  A200: '#2f7292',
+  A400: '#2f5978',
+  A700: '#2e475e',
+  contrastDefaultColor: 'light',
+};
 
 const theme = createMuiTheme({
   palette: {
-    primary: teal,
-    secondary: cyan,
+    primary: customBlue,
+    secondary: teal,
     error: red,
   },
 });

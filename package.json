@@ -26,6 +26,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-jss": "latest",
+    "schema": "^0.2.1",
+    "schema-client": "^3.0.13",
     "uuid": "^3.3.2"
   },
   "scripts": {

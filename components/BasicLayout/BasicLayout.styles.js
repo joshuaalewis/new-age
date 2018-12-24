@@ -4,6 +4,7 @@ export const styles = theme => ({
         width: '100%',
         height: '100%',
         backgroundColor: '#fbfbfb',
+        position: 'relative',
     },
     appFrame: {
         height: 430,
@@ -22,7 +23,8 @@ export const styles = theme => ({
         color: 'white',
         paddingLeft: 15,
         paddingRight: 15,
-        // marginLeft: 30,
+        marginLeft: 5,
+        marginRight: 5,
         textAlign: 'center',
         display: 'inline',
         [theme.breakpoints.down('sm')]: {
@@ -30,7 +32,13 @@ export const styles = theme => ({
             textAlign: 'center',
             marginRight: 20,
             marginLeft: 20,
+        },
+        '&.active': {
+            border: '1px solid #ffffff99'
         }
+    },
+    button: {
+        marginRight: 10,
     },
     leftButton: {
         marginLeft: '10%',
@@ -39,7 +47,7 @@ export const styles = theme => ({
         marginRight: '10%',
     },
     appBar: {
-        background: `linear-gradient(to bottom right, ${theme.palette.primary[400]}, ${theme.palette.primary[200]})`,
+        background: `linear-gradient(to bottom right, ${theme.palette.primary[500]}, ${theme.palette.primary[500]})`,
         zIndex: 2200,
     },
     menuButton: {

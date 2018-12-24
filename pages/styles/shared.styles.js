@@ -7,9 +7,33 @@ export const styles = theme => ({
     },
     card: {
         margin: 10,
+        // maxHeight: 480,
+        '&.small': {
+            
+        },
     },
     media: {
         height: 300,
+        '&.small': {
+            height: 180,
+            width: 180,
+        },
+    },
+    img: {
+        height: 200,
+        cursor: 'pointer',
+        '&:hover': {
+            opacity: 1
+        }
+    },
+    selectText: {
+        backgroundColor: theme.palette.primary[700], 
+        borderRadius: 30, 
+        width: 200, 
+        margin: '60px auto', 
+        padding: 20, 
+        textAlign: 'center', 
+        color: 'white',
     },
     subheader: {
         borderRadius: 30,

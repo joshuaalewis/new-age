@@ -9,22 +9,21 @@ class HttpService {
     static get(resourceName, queryParams=[], baseURL=(this.basePath)) {
         axios.defaults.baseURL = baseURL;
         axios.defaults.responseType = "application/json";
-        // axios.defaults.headers.common['Authorization'] = `Bearer ${this.accessToken}`;
         axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
 
         return axios.get(`${resourceName}${this.buildQuery(queryParams)}`)
-            .then(response => {
-                return response.data;
-            })
-            .catch(err => {
-                if(err.response) {
-                    let status = err.response.status;
-                    if(status === 401) {
-                        //TODO
-                        console.log("Unuauthorized");
-                    }
+        .then(response => {
+            return response.data;
+        })
+        .catch(err => {
+            if(err.response) {
+                let status = err.response.status;
+                if(status === 401) {
+                    //TODO
+                    console.log("Unuauthorized");
                 }
-            });
+            }
+        });
     }
 
     static post(resourceName, object, queryParams=[]) {
